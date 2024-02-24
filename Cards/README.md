@@ -1,0 +1,1 @@
+webpage built with CSS, HTML, and vanilla JavaScript. Toggle effortlessly between list view, grid view, and card layout options to explore content in your preferred style. 
