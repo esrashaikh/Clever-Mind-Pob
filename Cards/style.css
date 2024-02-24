@@ -1,0 +1,535 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(
+    circle,
+    rgba(241, 61, 207, 0.9220938375350141) 42%,
+    rgba(249, 75, 201, 1) 54%,
+    rgba(162, 58, 206, 0.625) 100%
+  );
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline-block;
+  margin-right: 50px;
+  color: #fff;
+  padding: 20px 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-family: "Satisfy", cursive;
+}
+
+header nav ul li label:hover {
+  cursor: pointer;
+}
+header nav ul li:hover {
+  cursor: pointer;
+}
+
+.list-type {
+  position: absolute;
+  top: 12%;
+  left: 32%;
+
+  z-index: 9999;
+}
+.share-links {
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  z-index: 9999;
+}
+.share-links ul {
+  list-style-type: none;
+  background-color: #fac6ff;
+  padding: 13px 20px;
+  border-radius: 10px;
+  color: #343232;
+}
+.list-type ul {
+  list-style-type: none;
+  background-color: #fac6ff;
+  padding: 13px 20px;
+  border-radius: 10px;
+  color: #343232;
+}
+.share-links ul li {
+  border-bottom: 1px solid #b3b9b9;
+  cursor: pointer;
+  padding: 10px 5px;
+}
+
+.list-type ul li {
+  border-bottom: 1px solid #b3b9b9;
+  cursor: pointer;
+  padding: 10px 5px;
+}
+
+.fab {
+  font-size: 12px;
+  margin-right: 5px;
+}
+.share-links ul li:last-child {
+  border-bottom: none;
+}
+.list-type ul li:last-child {
+  border-bottom: none;
+}
+
+.wrapper {
+  background-color: #fac6ff;
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+
+.our_team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.our_team .team_member {
+  width: 250px;
+  margin: 5px;
+  padding: 20px 10px;
+}
+
+.our_team .team_member .member_img {
+  background: #e9e5fa;
+  max-width: 190px;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.our_team .team_member .member_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.our_team .team_member h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 18px;
+  margin: 15px 0 0px;
+}
+
+.our_team .team_member span {
+  font-size: 10px;
+}
+
+.our_team .team_member p {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.our_team .team_member .member_img .social_media {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: rgba(0, 0, 0, 0.65);
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+.our_team .team_member .member_img .social_media .item {
+  margin: 0 10px;
+}
+
+.our_team .team_member .member_img .social_media .fab {
+  color: #8c7ae6;
+  font-size: 20px;
+}
+
+.our_team .team_member .member_img:hover .social_media {
+  transform: scale(1);
+}
+
+.card-body img {
+  width: 150px;
+  /* border-radius: 50%; */
+  /* border: 1px solid black; */
+}
+
+.card-list-view {
+  background: #fac6ff;
+  width: 80%;
+
+  margin: auto;
+}
+.card-list-view .card-body {
+  border-bottom: 1px solid #fff;
+  margin: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.card-list-view .card-body:last-child {
+  margin-bottom: 0;
+}
+
+.card-list-view .card-body .pad-left {
+  margin-right: 25px;
+}
+.card-body .title {
+  font-weight: 600;
+}
+.card-body .contnent {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 22px;
+}
+
+.card-body button {
+  color: #fff;
+  background: #1d6706;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.card-body button:hover {
+  background: #3bd62b;
+}
+
+.card-grid-view {
+  width: 80%;
+  background: #fac6ff;
+  margin: auto;
+}
+
+.card-grid-view .card-body {
+  width: 230px;
+  border: 1px solid #fff;
+  padding: 25px;
+  text-align: center;
+  margin: 10px;
+  display: inline-block;
+}
+.card-grid-view .card-body .pad-left {
+  margin-bottom: 10px;
+}
+
+.list {
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
+  border: 1px solid white;
+  background: #fac6ff;
+}
+
+.list h2 {
+  position: relative;
+  padding: 20px;
+  /* color: white; */
+  background-color: #f178fc;
+}
+.list ul li {
+  position: relative;
+  list-style-type: none;
+  padding: 15px 5px;
+  border-bottom: 1px solid rgba(255, 254, 254);
+  color: black;
+}
+.list ul li:last-child {
+  border-bottom: none;
+}
+.list ul li label {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.list ul li label input {
+  visibility: hidden;
+  appearance: none;
+  /*  removes default styling provided by the browser */
+}
+
+.list ul li label p {
+  position: absolute;
+}
+
+.list ul li label span {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #4b4848;
+}
+
+.list ul li label span::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid #4b4848;
+  border-bottom: 2px solid #4b4848;
+  transform: rotate(-40deg);
+}
+.list ul li label input:checked ~ p {
+  text-decoration: line-through;
+  color: #f178fc;
+}
+
+.list ul li label input:checked ~ span {
+  background: #bf71ff;
+  border: 1px solid #000;
+}
+
+.list ul li label input:checked ~ span::before {
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+.conatiner .cards {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.conatiner .cards .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: 2px solid #1e1f32;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conatiner .cards .box:hover {
+  transform: translateY(-50px);
+  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+
+.conatiner .cards .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.conatiner .cards .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.conatiner .cards .box .content h3 {
+  font-size: 1.8em;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  transition: 0.5s;
+}
+.conatiner .cards .box .content p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.conatiner .cards .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #000;
+  margin-top: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+  background: #9ad426;
+}
+
+.conatiner .cards:nth-child(2) .box .content a {
+  background: #3a5efd;
+}
+
+.conatiner .cards:nth-child(3) .box .content a {
+  background: #22dd5a;
+}
+
+.conatiner2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  transform-style: preserve-3d;
+}
+.conatiner2 .boxx {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  background: #232322;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+
+.conatiner2 .boxx::before {
+  content: "Nike";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 6em;
+  font-style: italic;
+  color: white;
+  opacity: 0;
+}
+
+.conatiner2 .boxx::after {
+  content: "SHOES ";
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 5em;
+  font-style: italic;
+  color: white;
+  opacity: 0;
+}
+
+.conatiner2 .boxx:hover::before,
+.conatiner2 .boxx:hover::after {
+  opacity: 0.04;
+}
+
+.conatiner2 .boxx .namee {
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  transform: translate3d(0,0,75px);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.conatiner2 .boxx:hover .namee
+{
+  top: 40px;
+  opacity: 1;
+}
+
+.conatiner2 .boxx .buy{
+ position: absolute;
+ bottom: 0;
+ left: 50%; 
+ transform-style: preserve-3d ;
+ transform: translate(-50%,0.75px);
+ color: white;
+ background:#333 ;
+ padding: 10px 25px;
+ border-radius: 30px;
+ text-decoration: none;
+ transition: 0.5s;
+ opacity: 0;
+ z-index: 10;
+}
+
+.conatiner2 .boxx:hover .buy
+{
+  bottom: 30px;
+  opacity: 1;
+}
+
+.conatiner2 .boxx .circle{
+position: absolute;
+top: 50%;
+left: 50%;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+transition: 0.5s;
+background: #fff;
+transform-style: preserve-3d;
+z-index: 10;
+opacity: 1;
+transform: translate3d(-50%,-50%,50px);
+}
+
+
+.conatiner2 .boxx .product{
+position: absolute;
+top: 50%;
+left: 50%;
+max-width: 300px;
+transition: 0.5s;
+z-index: 11;
+transform-style: preserve-3d;
+transform: translate3d(-50%,-50%,0px) rotate(-15deg);
+}
+
+.conatiner2 .boxx:hover .product
+{
+  transform: translate3d(-50%,-50%,80px) rotate(-15deg);
+
+}
+.conatiner2 .boxx:nth-child(1) .circle
+{
+background: #a6c741;
+}
+
+.conatiner2 .boxx:nth-child(2) .circle
+{
+background: #d07a15;
+}
+
+.conatiner2 .boxx:nth-child(3) .circle
+{
+background: #933668;
+}
